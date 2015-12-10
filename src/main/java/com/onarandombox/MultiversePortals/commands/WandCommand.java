@@ -63,9 +63,9 @@ public class WandCommand extends PortalCommand {
                 p.sendMessage("You have been given a " + ChatColor.GREEN + "Multiverse Portal Wand(" + wand.getType() + ")!");
             } else {
                 if (p.getInventory().addItem(wand).isEmpty()) {
-                    p.sendMessage("A " + ChatColor.GREEN + "Multiverse Portal Wand(" + wand.getType() + ")" + ChatColor.WHITE + " has been placed in your inventory.");
+                    p.sendMessage("A " + ChatColor.GREEN + "Multiverse Portal Wand (" + wand.getType() + ")" + ChatColor.WHITE + " has been placed in your inventory.");
                 } else {
-                    p.sendMessage("Your Inventory is full. A " + ChatColor.GREEN + "Multiverse Portal Wand(" + wand.getType() + ")" + ChatColor.WHITE + " has been placed dropped nearby.");
+                    p.sendMessage("Your Inventory is full. A " + ChatColor.GREEN + "Multiverse Portal Wand (" + wand.getType() + ")" + ChatColor.WHITE + " has been placed dropped nearby.");
                     p.getWorld().dropItemNaturally(p.getLocation(), wand);
                 }
             }
