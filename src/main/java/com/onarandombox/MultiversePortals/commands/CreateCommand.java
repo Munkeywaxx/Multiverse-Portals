@@ -66,7 +66,7 @@ public class CreateCommand extends PortalCommand {
             portal = this.plugin.getPortalManager().getPortal(args.get(0));
 
         } else {
-            sender.sendMessage("New portal(" + ChatColor.DARK_AQUA + args.get(0) + ChatColor.WHITE + ") was NOT created!");
+            sender.sendMessage("New portal portal (" + ChatColor.DARK_AQUA + args.get(0) + ChatColor.WHITE + ") was NOT created!");
             sender.sendMessage("It already existed and has been selected.");
         }
 
